@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Vehicle Rental System</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>🚗 Vehicle world🏍️</h1>
+
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About Us</a>
+        <a href="#contact">Contact</a>
+        <a href="#help">Help</a>
+    </nav>
+</header>
+
+<section id="home">
+    <h2>Our vehicle Menu</h2>
+
+    <div class="products">
+
+        <div class="card">
+            <img src="Royal Enfield.jpg" alt="Royal Enfield">
+            <h3>Royal Enfield</h3>
+            <p>₹800<span> /Per Day</span></p>
+            <button onclick="addToCart('Royal Enfield',800)">Add to Cart</button>
+        </div>
+
+        <div class="card">
+            <img src="XL100.jpg" alt="XL 100">
+            <h3>XL 100</h3>
+            <p>₹500<span> /Per Day</span></p>
+            <button onclick="addToCart('XL 100',500)">Add to Cart</button>
+        </div>
+
+        <div class="card">
+            <img src="R15.jpg" alt="R15">
+            <h3>R15</h3>
+            <p>₹1000<span> /Per Day</span></p>
+            <button onclick="addToCart('R15',1000)">Add to Cart</button>
+        </div>
+
+        <div class="card">
+            <img src="Thar Roxx.jpg" alt="Thar Roxx">
+            <h3>Thar Roxx</h3>
+            <p>₹2500<span> /Per Day</span></p>
+            <button onclick="addToCart('Thar Roxx',2500)">Add to Cart</button>
+        </div>
+
+        <div class="card">
+            <img src="Suzuki Swift.jpg" alt="Suzuki Swift">
+            <h3>Suzuki Swift</h3>
+            <p>₹1500<span> /Per Day</span></p>
+            <button onclick="addToCart('Suzuki Swift',1500)">Add to Cart</button>
+        </div>
+
+        <div class="card">
+            <img src="Ambassador.jpg" alt="Ambassador">
+            <h3>Ambassador</h3>
+            <p>₹1200<span> /Per Day</span></p>
+            <button onclick="addToCart('Ambassador',1200)">Add to Cart</button>
+        </div>
+
+        <div class="card">
+            <img src="TATA Ace.jpg" alt="TATA Ace">
+            <h3>TATA Ace</h3>
+            <p>₹1000<span> /Per Day</span></p>
+            <button onclick="addToCart('TATA Ace',1000)">Add to Cart</button>
+        </div>
+
+        <div class="card">
+            <img src="Appa Bicycle.jpg" alt="Appa Bicycle">
+            <h3>Appa Bicycle</h3>
+            <p>₹200<span> /Per Day</span></p>
+            <button onclick="addToCart('Appa Bicycle',200)">Add to Cart</button>
+        </div>
+
+    </div>
+</section>
+
+<section id="about">
+    <h2>About Us</h2>
+    <p>
+        About Our Vehicle Rental System
+We make your journey easier, faster, and more affordable. Whether you need a bike for a quick city ride or a car for a long trip, we’ve got the right vehicle for you.
+No complicated process, no unnecessary waiting — just choose your vehicle, book it, and start your journey. Your ride, your choice, your adventure! 🚗✨.
+    </p>
+</section>
+
+<section id="contact">
+    <h2>Contact Us</h2>
+    <p>Email: vehiclerental@gmail.com</p>
+    <p>Phone: +91 9876543210</p>
+</section>
+
+<section id="help">
+    <h2>Help</h2>
+    <p>
+        Need a Ride? Need Some Help? We’re Here!
+Have a question about a vehicle, booking, or payment? Don’t worry — just reach out to us.
+    </p>
+</section>
+
+<div class="cart">
+    <h2>Shopping Cart</h2>
+<button onclick="payNow(total)">Place Order</button>
+    <ul id="cartItems"></ul>
+    <h3>Total: ₹<span id="total">0</span></h3>
+</div>
+
+<script src="script.js"></script>
+<script src="https://checkout.razorpay.com/v1/checkout.js"></script>
+
+</body>
+</html>
